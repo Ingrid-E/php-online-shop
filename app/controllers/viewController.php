@@ -10,7 +10,7 @@
                 $route=explode("/", $_GET['url']);
                 $response=ViewModel::get_views_model($route[0]);
             }else{
-                $response="login";
+                $response = "../app/views/contents/loginView.php";
             }
             return require_once $response;
         }
